@@ -193,7 +193,7 @@ model.summary()
 print("Traning Model...")
 history = model.fit(X_train, y_train, batch_size=BATCH_SIZE, epochs=n_epochs,  callbacks=[early,], validation_data=(X_val, y_val))
 
-model.save('drive/My Drive/Text_Classification/model_one/model.h5')
+model.save('model_1.h5')
 
 import matplotlib.pyplot as plt
 plt.plot(history.history['accuracy'])
