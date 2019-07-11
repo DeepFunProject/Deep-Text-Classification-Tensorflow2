@@ -104,7 +104,7 @@ def load_data():
     x, y = build_input_data(sentences_padded, labels, vocabulary)
     return [x, y, vocabulary, vocabulary_inv]
 
-#************************************************** model **************************************************************
+#*************************************************** model **************************************************************
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.layers import *
